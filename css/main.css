@@ -1,0 +1,53 @@
+.dropdwn{
+    max-width: 1200px; /* 最大の横幅を指定 */
+    display: flex; /* liタグを横に揃える */
+}
+
+ul{
+    text-align: center; /* 文字を中央によせる */
+    list-style-type: none; /* 箇条書きの先頭についている「ポチ」や「連番」の見た目を変える */
+    margin: 0 auto;
+    padding: 0; /* 要素の内側の余白を0にする */
+    color: #fff;
+}
+
+li{
+    max-width: calc(1200px/5); /* liの最大の横幅を240pxにする */
+    position: relative; /* liの配置を相対位置への配置にする */
+    padding: 5px;
+    display: block; /* liの表示方法をblockにする */
+    cursor: pointer; /* カーソルの形を指の形に変える */
+}
+
+.dropdwn>li{
+    width: 1200px;
+    margin: 1px;
+    background: #7ba5ff;
+    display: inline;
+}
+
+.dropdwn_menu {
+    width: 100%;
+    display: none;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 5px;
+    padding: 0;
+    background: rgb(75, 100, 209);
+}
+
+.dropdwn_menu li {
+    width: 100%;
+}
+
+.dropdwn_menu li a {
+    padding: 5px 0;
+    margin: -5px 5px -5px -5px;
+    display: block;
+    color: #fff;
+}
+
+li a:hover { /* aタグの上にカーソルが来た時のcss */
+    background: #b3d7ff;
+    color: rgb(65, 65, 65);
+}
