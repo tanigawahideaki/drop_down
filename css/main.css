@@ -19,7 +19,7 @@ li{
     cursor: pointer; /* カーソルの形を指の形に変える */
 }
 
-.dropdwn>li{
+.dropdwn>li{ /* dropdwnクラスの直下にあるliタグ */
     width: 1200px;
     margin: 1px;
     background: #7ba5ff;
